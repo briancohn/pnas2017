@@ -114,7 +114,7 @@ We collected points for multiple task intensities between $0\%$ (i.e., pure co-c
 
 \begin{figure}[htbp]
  \centering
- \includegraphics[width=0.4\textwidth]{numbered_figures/figure_3_parcoord_schematic.pdf}
+ \includegraphics[width=4cm]{numbered_figures/figure_3_parcoord_schematic.pdf}
  \caption{\textbf{Characterizing the high-dimensional structure of a feasible activation space via parallel coordinates.} Consider three points (i.e., muscle activation patterns in Supplemental Fig.~\ref{fig:figure_2_hit_and_run_steps}e) from the feasible activation space (a). The activation level for each muscle (i.e., the coordinates of each point) are sewn across three vertical parallel axes (b). As is common when evaluating multiple valid coordination patterns, each point can be assigned a cost as per an assumed \emph{cost function}. The associated cost for each muscle activation pattern can also be shown as an additional dimension. We show three representative cost functions (c). Activation levels are bound between $0$ and $1$, and costs are normalized to their respective observed ranges.}
  \label{fig:points_to_parcoords_mapping}
 \end{figure}
@@ -419,27 +419,8 @@ Currently available volume algorithms can only handle polytopes embedded in smal
 Similar difficulties arise when computing other geometric properties such as the shape and aspect ratio of $P$ in high dimensions. We and others have described polytopes $P$ by their bounding box (i..e, the range of values in every dimension)~\cite{sohn2013cat_bounding_box,kutch2011muscle}, but that singularly overestimates the shape and volume of the feasible activation space as discussed in~\cite{Valero-Cuevas2015high-dimensional}.
 Take Fig.~\ref{fig:figure_2_hit_and_run_steps}e as an example, where the bounding box of the 2-dimensional polygon has a volume---even though a plane has zero volume---, and can be almost as large as the positive unit cube itself. Similar problems arise in the interpretation of the inscribed and circumscribed ball~\cite{inouye2014optimizing}.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.5\textwidth]{numbered_figures/figure_2_hit_and_run_ALL_steps.pdf}
-\caption{\textbf{Characterizing the high-dimensional structure of a feasible activation set via the Hit-and-Run algorithm~\cite{lovasz1999hit}.}  For a large class of biomechanical tasks, the feasible activation set is a convex polytope. Here we show a 3-muscle system as a schematic example upon which Hit-and-Run can be applied. We select a valid direction at random (a), and project a line to both boundaries (b). After selecting a point at random from the resulting line (c), we get a new valid point $p_1$ (d). Repeating steps a-d many (e.g., 100,000) times, and down-sampling those points, produces a statistically complete representation of the polytope (e)---and of the high-dimensional structure of the feasible activation set.}
-\label{fig:figure_2_hit_and_run_steps}
-\end{figure}
 
-
-We propose a complete probabilistic method to describe the structure of feasible activation spaces $P$. This includes the the descriptive statistics, histograms, and point densities of the set of valid muscle activation patterns $\textbf{a}$ uniformly sampled from the polytope. To do so, we use the Hit-and-Run method. Experimentally, it is known to converge to a uniform sampling across any convex body, up to about 40 dimensions~\cite{smith1984efficient}. The Hit-and-Run method is a generalization of a discrete Markov chain---where the goal is to identify multiple points from the feasible activation polytope $P$ uniformly-at-random.
-
-The Hit-and-Run algorithm is defined as follows (it works analogously for any convex body even if not a polytope)\cite{lovasz1999hit}:
-\begin{enumerate}
-\item Find a point $\textbf{p}$ in $P$ to use as a starting point by using the linear programming method documented in the Supplementary Note.
-\item Generate a line in a random direction $q$ (uniformly-at-random\ over all directions) from $\textbf{p}$ in $P$ (Fig.~\ref{fig:figure_2_hit_and_run_steps}a).
-\item Find the two intersection points of the line given by the random direction $q$ with the boundary of the polytope (Fig.~\ref{fig:figure_2_hit_and_run_steps}b).
-\item Choose a new point uniformly-at-random on the line segment between the intersection points (Fig.~\ref{fig:figure_2_hit_and_run_steps}c).
-\item Repeat the above steps from $2.$ onwards using the new point as the starting point, and generate a new random direction.
-Continue this process for $s$ iterations, where $s$ is the mixing number. The mixing number is the number of iterations that are expected to result in a point sampled uniformly at random from the space, with respect to the starting point (and any other point in $P$. Saving just the $s^{th}$ point for many repetitions will result in many uniform-at-random points collected across the feasible activation space (Fig.~\ref{fig:figure_2_hit_and_run_steps}).
-\end{enumerate}
-
-We describe the mathematical basis and details to replicate our implementation in the Supplementary Note, including our application of slack variables to select a valid starting point within the feasible activation space.
+We propose a complete probabilistic method to describe the structure of feasible activation spaces $P$. This includes the the descriptive statistics, histograms, and point densities of the set of valid muscle activation patterns $\textbf{a}$ uniformly sampled from the polytope. To do so, we use the Hit-and-Run method. We have presented a detailed explanation of the theory (In Chapter X of \cite{YYY_FUNDAMENTALS_BOOK}), have justified the utility of this method on tendon-driven models of the index finger \cite{YYY_IEEE_STR}.
 
 \subsection*{Example of a tendon-driven system}
 \paragraph*{Realistic 3-D model of a 7-muscle human index finger}
@@ -470,7 +451,7 @@ a_{PI}
 \end{pmatrix}
 \end{equation}
 
-In Cartesian coordinates, the output wrench is
+In Cartesian coordinates, the 4-dimensional output wrench corresponds to the anatomical directions shown in Fig.~\ref{fig:overview}e.
 
 \begin{equation}
 \label{eq:wc}
@@ -480,13 +461,7 @@ f_{x}\\
 f_{y}\\
 f_{z}\\
 \tau_{x}
-\end{pmatrix}
-\end{equation}
-
-which corresponds to these anatomical directions shown in Fig.~\ref{fig:overview}e.
-\begin{equation}
-\label{eq:wa}
-\textbf{w}=
+\end{pmatrix} =
 \begin{pmatrix}
 f_{radial}\\
 f_{distal}\\
@@ -494,6 +469,9 @@ f_{palmar}\\
 \tau_{radial}
 \end{pmatrix}
 \end{equation}
+
+
+
 
 The biomechanical model $H$ includes three serial links articulated by four kinematic degrees of freedom (ad-abduction, flexion-extension at the metacarpophalangeal joint, and flexion-extension at the proximal and distal interphalangeal joints). The action of each of the seven muscles (FDP: \emph{flexor digitorum profundus}, FDS: \emph{flexor digitorum superficialis}, EIP: \emph{extensor indicis proprius}, EDC: \emph{extensor digitorum communis}, LUM: \emph{lumbrical}, DI: \emph{dorsal interosseous}, and PI: \emph{palmar interosseous}) on each joint to produce torque is given by the moment arm matrix $R \in \mathbb{R}^{4 \times 7}$. Lastly, $J \in \mathbb{R}^{4 \times 4}$ and $F_0 \in \mathbb{R}^{7 \times 7}$ are the Jacobian of the fingertip with 4 kinematic degrees of freedom, and the diagonal matrix containing the maximal strengths of the seven muscles, respectively~\cite{valero-cuevas2015fundamentals,Valero-Cuevas2000Scaling}. The finger posture was defined to be $0^\circ$ ad-abduction and $45^\circ$ flexion at the metacarpophalangeal joint, and $45^\circ$ and $10^\circ$ flexion, respectively, at the proximal and distal interphalangeal joints.
 
