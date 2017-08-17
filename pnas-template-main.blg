@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: pnas-template-main.aux
+The style file: pnas-new.bst
+White space in argument---line 39 of file pnas-template-main.aux
+ : \citation{Valero-Cuevas1998Large
+ :                                  }
+I'm skipping whatever remains of this command
+White space in argument---line 77 of file pnas-template-main.aux
+ : \citation{kording2004bayesian,Kording2014130,berniker2013examination,sanger2011distributed
+ :                                                                                            }
+I'm skipping whatever remains of this command
+Database file #1: plos_cohn_bibliography.bib
+Warning--I didn't find a database entry for "belkin2002using"
+Warning--I didn't find a database entry for "berard1994embedding"
+Warning--I didn't find a database entry for "coifman2005geometric"
+Warning--can't use both volume and number fields in de2014human
+Warning--can't use both volume and number fields in krekel2010visual
+You've used 64 entries,
+            1837 wiz_defined-function locations,
+            877 strings with 15479 characters,
+and the built_in function-call counts, 16392 in all, are:
+= -- 1464
+> -- 742
+< -- 12
++ -- 222
+- -- 158
+* -- 1318
+:= -- 2347
+add.period$ -- 130
+call.type$ -- 64
+change.case$ -- 60
+chr.to.int$ -- 0
+cite$ -- 66
+duplicate$ -- 784
+empty$ -- 1545
+format.name$ -- 158
+if$ -- 3691
+int.to.chr$ -- 0
+int.to.str$ -- 64
+missing$ -- 68
+newline$ -- 261
+num.names$ -- 64
+pop$ -- 113
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 507
+stack$ -- 0
+substring$ -- 1402
+swap$ -- 263
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 158
+width$ -- 66
+write$ -- 650
+(There were 2 error messages)

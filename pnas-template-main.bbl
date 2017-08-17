@@ -1,0 +1,326 @@
+\begin{thebibliography}{10}
+
+\bibitem{kutch2012challenges}
+Kutch J, Valero-Cuevas F (2012) Challenges and new approaches to proving the
+  existence of muscle synergies of neural origin.
+\newblock {\em PLoS Computational Biology} 8(5):e1002434.
+
+\bibitem{steele2013number}
+Steele KM, Tresch MC, Perreault EJ (2013) The number and choice of muscles
+  impact the results of muscle synergy analyses.
+\newblock {\em Frontiers in computational neuroscience} 7.
+
+\bibitem{bizzi2013neural}
+Bizzi E, Cheung VC (2013) The neural origin of muscle synergies.
+\newblock {\em Frontiers in computational neuroscience} 7.
+
+\bibitem{dingwell2010walkingvariability}
+Dingwell JB, John J, Cusumano JP (2010) Do humans optimally exploit redundancy
+  to control step variability in walking?
+\newblock {\em PLoS computational biology} 6(7):e1000856.
+
+\bibitem{racz2013spatiotemporal}
+R{\'a}cz K, Valero-Cuevas FJ (2013) Spatio-temporal analysis reveals active
+  control of both task-relevant and task-irrelevant variables.
+\newblock {\em Frontiers in computational neuroscience} 7.
+
+\bibitem{steele2015consequences}
+Steele KM, Tresch MC, Perreault EJ (2015) Consequences of biomechanically
+  constrained tasks in the design and interpretation of synergy analyses.
+\newblock {\em Journal of neurophysiology} 113(7):2102--2113.
+
+\bibitem{alessandro2013musclesynergies}
+Alessandro C, Delis I, Nori F, Panzeri S, Berret B (2013) Muscle synergies in
+  neuroscience and robotics: from input-space to task-space perspectives.
+\newblock {\em Frontiers in computational neuroscience} 7.
+
+\bibitem{kording2004bayesian}
+K{\"o}rding KP, Wolpert DM (2004) Bayesian integration in sensorimotor
+  learning.
+\newblock {\em Nature} 427(6971):244--247.
+
+\bibitem{Kording2014130}
+Kording KP (2014) Bayesian statistics: relevant for the brain?
+\newblock {\em Current Opinion in Neurobiology} 25:130 -- 133.
+\newblock Theoretical and computational neuroscience.
+
+\bibitem{berniker2013examination}
+Berniker M, O'Brien MK, Kording KP, Ahmed AA (2013) An examination of the
+  generalizability of motor costs.
+\newblock {\em PloS one} 8(1):e53759.
+
+\bibitem{sanger2011distributed}
+Sanger TD (2011) Distributed control of uncertain systems using superpositions
+  of linear operators.
+\newblock {\em Neural computation} 23(8):1911--1934.
+
+\bibitem{Chao1978Graphical}
+Chao E, An K (1978) Graphical interpretation of the solution to the redundant
+  problem in biomechanics.
+\newblock {\em Journal of Biomechanical Engineering} 100:159--67.
+
+\bibitem{Prilutsky2000Muscle}
+Prilutsky BI (2000) Muscle coordination: the discussion continues.
+\newblock {\em Motor Control} 4(1):97--116.
+\newblock 0 1087-1640 Journal article.
+
+\bibitem{scott2004optimal}
+Scott SH (2004) Optimal feedback control and the neural basis of volitional
+  motor control.
+\newblock {\em Nature Reviews Neuroscience} 5(7):532--546.
+
+\bibitem{todorov2002optimal}
+Todorov E, Jordan MI (2002) Optimal feedback control as a theory of motor
+  coordination.
+\newblock {\em Nature neuroscience} 5(11):1226--1235.
+
+\bibitem{crowninshield1981physiologically}
+Crowninshield R, Brand R (1981) A physiologically based criterion of muscle
+  force prediction in locomotion.
+\newblock {\em Journal of Biomechanics} 14(11):793--801.
+
+\bibitem{higginson2005simulated}
+Higginson J, Neptune R, Anderson F (2005) Simulated parallel annealing within a
+  neighborhood for optimization of biomechanical systems.
+\newblock {\em Journal of biomechanics} 38(9):1938--1942.
+
+\bibitem{valero-cuevas2015fundamentals}
+Valero-Cuevas FJ (2015) {\em Fundamentals of Neuromechanics}, Biosystems and
+  Biorobotics.
+\newblock ({Springer\-Verlag London}) Vol.{}~8.
+
+\bibitem{spoor1983balancing}
+Spoor C (1983) Balancing a force on the fingertip of a two-dimensional finger
+  model without intrinsic muscles.
+\newblock {\em Journal of Biomechanics} 16(7):497--504.
+
+\bibitem{Kuo1993Human}
+Kuo A, Zajac F (1993) Human standing posture: multi-joint movement strategies
+  based on biomechanical constraints.
+\newblock {\em Progress in Brain Research} 97:349--358.
+
+\bibitem{Valero-Cuevas1998Large}
+Valero-Cuevas FJ, Zajac FE, Burgar CG (1998) {{L}arge index-fingertip forces
+  are produced by subject-independent patterns of muscle excitation}.
+\newblock {\em Journal of Biomechanics} 31:693--703.
+
+\bibitem{gallego2017neuron}
+Gallego JA, Perich MG, Miller LE, Solla SA (2017) Neural manifolds for the
+  control of movement.
+\newblock {\em Neuron} 94(5):978--984.
+
+\bibitem{bellman1958dynamic}
+Bellman R, Osborn H (1958) Dynamic programming and the variation of green's
+  functions.
+\newblock {\em Journal of Mathematics and Mechanics} pp. 81--85.
+
+\bibitem{bellman2015adaptive}
+Bellman RE (2015) {\em Adaptive control processes: a guided tour}.
+\newblock (Princeton university press).
+
+\bibitem{avis1992Pivoting}
+Avis D, Fukuda K (1992) A pivoting algorithm for convex hulls and vertex
+  enumeration of arrangements and polyhedra.
+\newblock {\em Discrete \& Computational Geometry} 8(3):295--313.
+
+\bibitem{valero2009computational}
+Valero-Cuevas FJ, Hoffmann H, Kurse MU, Kutch JJ, Theodorou EA (2009)
+  Computational models for neuromuscular function.
+\newblock {\em IEEE Reviews in Biomedical Engineering (2) October} p.
+  110{\~n}135.
+
+\bibitem{theodorou2010optimalityEMBC}
+Theodorou E, Valero-Cuevas FJ (2010) Optimality in neuromuscular systems in
+  {\em Engineering in Medicine and Biology Society (EMBC), 2010 Annual
+  International Conference of the IEEE}.
+\newblock (IEEE), pp. 4510--4516.
+
+\bibitem{scholz1999uncontrolled}
+Scholz JP, Sch{\"o}ner G (1999) The uncontrolled manifold concept: identifying
+  control variables for a functional task.
+\newblock {\em Exp Brain Res} 126:289--306.
+
+\bibitem{Valero-Cuevas2015high-dimensional}
+Valero-Cuevas FJ, Cohn BA, Yngvason HF, Lawrence EL (2015 In Press) Exploring
+  the high-dimensional structure of muscle redundancy via subject-specific and
+  generic musculoskeletal models.
+\newblock {\em Journal of Biomechanics} doi:10.1016/j.jbiomech.2015.04.026.
+
+\bibitem{sohn2013cat_bounding_box}
+Sohn MH, McKay JL, Ting LH (2013) Defining feasible bounds on muscle activation
+  in a redundant biomechanical task: practical implications of redundancy.
+\newblock {\em Journal of biomechanics} 46(7):1363--1368.
+
+\bibitem{Venkadesan2008Neural}
+Venkadesan M, Valero-Cuevas FJ (2008) {{N}eural control of motion-to-force
+  transitions with the fingertip}.
+\newblock {\em J. Neurosci.} 28:1366--1373.
+
+\bibitem{valero2000quantification}
+Valero-Cuevas FJ, Towles JD, Hentz VR (2000) Quantification of fingertip force
+  reduction in the forefinger following simulated paralysis of extensor and
+  intrinsic muscles.
+\newblock {\em Journal of biomechanics} 33(12):1601--1609.
+
+\bibitem{kutch2011muscle}
+Kutch JJ, Valero-Cuevas FJ (2011) Muscle redundancy does not imply robustness
+  to muscle dysfunction.
+\newblock {\em Journal of Biomechanics} 44(7):1264--1270.
+
+\bibitem{Valero-Cuevas2000Predictive}
+Valero-Cuevas FJ (2000) {{P}redictive modulation of muscle coordination pattern
+  magnitude scales fingertip force magnitude over the voluntary range}.
+\newblock {\em J. Neurophysiol.} 83:1469--1479.
+
+\bibitem{deRugy2012habitual}
+De~Rugy A, Loeb GE, Carroll TJ (2012) Muscle coordination is habitual rather
+  than optimal.
+\newblock {\em The Journal of Neuroscience} 32(21):7384--7391.
+
+\bibitem{loeb2012optimal}
+Loeb G (2012) Optimal is not good enough.
+\newblock {\em Biological Cybernetics} 106(11-12):757--765.
+
+\bibitem{chvatal1983linear}
+Chvatal V (1983) {\em Linear programming}.
+\newblock (Macmillan).
+
+\bibitem{smith1984efficient}
+Smith RL (1984) Efficient monte carlo procedures for generating points
+  uniformly distributed over bounded regions.
+\newblock {\em Operations Research} 32(6):1296--1308.
+
+\bibitem{lovasz1999hit}
+Lov{\'a}sz L (1999) Hit-and-run mixes fast.
+\newblock {\em Mathematical Programming} 86(3):443--461.
+
+\bibitem{tsirakos1997inverse}
+Tsirakos D, Baltzopoulos V, Bartlett R (1997) Inverse optimization: functional
+  and physiological considerations related to the force-sharing problem.
+\newblock {\em Critical Reviews™ in Biomedical Engineering} 25(4-5).
+
+\bibitem{cole2006age}
+Cole KJ (2006) Age-related directional bias of fingertip force.
+\newblock {\em Experimental brain research} 175(2):285--291.
+
+\bibitem{valero1998large}
+Valero-Cuevas FJ, Zajac FE, Burgar CG (1998) Large index-fingertip forces are
+  produced by subject-independent patterns of muscle excitation.
+\newblock {\em Journal of Biomechanics} 31(8):693--704.
+
+\bibitem{donelan2004mechanical}
+Donelan JM, Shipman DW, Kram R, Kuo AD (2004) Mechanical and metabolic
+  requirements for active lateral stabilization in human walking.
+\newblock {\em Journal of biomechanics} 37(6):827--835.
+
+\bibitem{Valero-Cuevas2000Scaling}
+Valero-Cuevas FJ (2000) Predictive modulation of muscle coordination pattern
+  magnitude scales fingertip force magnitude over the voluntary range.
+\newblock {\em J Neurophysiol} 83(3):1469--1479.
+
+\bibitem{berger2014effective}
+Berger DJ, d'Avella A (2014) Effective force control by muscle synergies.
+\newblock {\em Frontiers in computational neuroscience} 8.
+
+\bibitem{santello2012context}
+Fu Q, Santello M (2012) Context-dependent learning interferes with visuomotor
+  transformations for manipulation planning.
+\newblock {\em Journal of Neuroscience} 32(43):15086--15092.
+
+\bibitem{gladwell2008outliers}
+Gladwell M (2008) {\em Outliers: The story of success}.
+\newblock (Hachette UK).
+
+\bibitem{coats201450scliff}
+Coats RO, Wilson AD, Snapp-Childs W, Fath AJ, Bingham GP (2014) The 50s cliff:
+  perceptuo-motor learning rates across the lifespan.
+\newblock {\em PloS one} 9(1):e85758.
+
+\bibitem{hardwick2016motor}
+Hardwick RM, Rajan VA, Bastian AJ, Krakauer JW, Celnik PA (2016) Motor learning
+  in stroke: Trained patients are not equal to untrained patients with less
+  impairment.
+\newblock {\em Neurorehabilitation and Neural Repair} p. 1545968316675432.
+
+\bibitem{adolph2012thousands}
+Adolph KE, et~al. (2012) How do you learn to walk? thousands of steps and
+  dozens of falls per day.
+\newblock {\em Psychological science} 23(11):1387--1394.
+
+\bibitem{inouye2016muscle}
+Inouye JM, Valero-Cuevas FJ (2016) Muscle synergies heavily influence the
+  neural control of arm endpoint stiffness and energy consumption.
+\newblock {\em PLoS Comput Biol} 12(2):e1004737.
+
+\bibitem{Dyer}
+Dyer M, Frieze A, Kannan R (1989) A random polynomial time algorithm for
+  approximating the volume of convex bodies.
+\newblock {\em Proc. of the 21st annual ACM Symposium of Theory of Computing}
+  pp. 375--381.
+
+\bibitem{Bueler2}
+B{\"u}eler B, Enge A, Fukuda K (2000) Exact volume computation for polytopes: A
+  practical study.
+\newblock {\em Polytopes: Combinatorics and Computation} 29:131--154.
+
+\bibitem{arnold2010model}
+Arnold EM, Ward SR, Lieber RL, Delp SL (2010) A model of the lower limb for
+  analysis of human movement.
+\newblock {\em Annals of biomedical engineering} 38(2):269--279.
+
+\bibitem{hamner2010muscle}
+Hamner SR, Seth A, Delp SL (2010) Muscle contributions to propulsion and
+  support during running.
+\newblock {\em Journal of biomechanics} 43(14):2709--2716.
+
+\bibitem{de2014human}
+De~Sapio V, Earl D, Green R, Saul K (2014) Human factors simulation using
+  demographically tuned biomechanical models in {\em Proceedings of the Human
+  Factors and Ergonomics Society Annual Meeting}.
+\newblock (SAGE Publications Sage CA: Los Angeles, CA), Vol.{}~58, pp.
+  944--948.
+
+\bibitem{inouye2014optimizing}
+Inouye JM, Kutch JJ, Valero-Cuevas FJ (2014) Optimizing the topology of
+  tendon-driven fingers: Rationale, predictions and implementation in {\em The
+  Human Hand as an Inspiration for Robot Hand Development}.
+\newblock (Springer), pp. 247--266.
+
+\bibitem{valero-cuevas2009computational}
+Valero-Cuevas F, Hoffmann H, Kurse M, Kutch J, Theodorou E (2009) Computational
+  models for neuromuscular function.
+\newblock {\em Biomedical Engineering, IEEE Reviews in} 2:110--135.
+
+\bibitem{bachynskyi2013biomechanical}
+Bachynskyi M, Oulasvirta A, Palmas G, Weinkauf T (2013) Biomechanical
+  simulation in the analysis of aimed movements in {\em CHI'13 Extended
+  Abstracts on Human Factors in Computing Systems}.
+\newblock (ACM), pp. 277--282.
+
+\bibitem{krekel2010visual}
+Krekel PR, et~al. (2010) Visual analysis of multi-joint kinematic data in {\em
+  Computer Graphics Forum}.
+\newblock (Wiley Online Library), Vol.{}~29, pp. 1123--1132.
+
+\bibitem{Zajac1993Muscle}
+Zajac FE (1993) Muscle coordination of movement: a perspective.
+\newblock {\em J Biomech} 26 Suppl 1:109--124.
+
+\bibitem{krishnamoorthy2003muscle}
+Krishnamoorthy V, Goodman S, Zatsiorsky V, Latash ML (2003) Muscle synergies
+  during shifts of the center of pressure by standing persons: identification
+  of muscle modes.
+\newblock {\em Biological cybernetics} 89(2):152--161.
+
+\bibitem{Clewley2008Estimating}
+Clewley RH, Guckenheimer JM, Valero-Cuevas FJ (2008) {{E}stimating effective
+  degrees of freedom in motor systems}.
+\newblock {\em IEEE Trans Biomed Eng} 55:430--442.
+
+\bibitem{valero2016robot}
+Valero-Cuevas FJ, Klamroth-Marganska V, Winstein CJ, Riener R (2016)
+  Robot-assisted and conventional therapies produce distinct rehabilitative
+  trends in stroke survivors.
+\newblock {\em Journal of neuroengineering and rehabilitation} 13(1):92.
+
+\end{thebibliography}
