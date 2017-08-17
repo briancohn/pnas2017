@@ -1,9 +1,9 @@
 \documentclass[9pt,twocolumn,twoside,lineno]{pnas-new}
 % Use the lineno option to display guide line numbers if required.
 % Note that the use of elements such as single-column equations
-% may affect the guide line number alignment. 
+% may affect the guide line number alignment.
 
-\templatetype{pnasresearcharticle} % Choose template 
+\templatetype{pnasresearcharticle} % Choose template
 % {pnasresearcharticle} = Template for a two-column research article
 % {pnasmathematics} = Template for a one-column mathematics article
 % {pnasinvited} = Template for a PNAS invited submission
@@ -12,7 +12,7 @@
 
 % Use letters for affiliations, numbers to show equal authorship (if applicable) and to indicate the corresponding author
 \author[a,c,1]{Author One}
-\author[b,1,2]{Author Two} 
+\author[b,1,2]{Author Two}
 \author[a]{Author Three}
 
 \affil[a]{Affiliation One}
@@ -20,10 +20,13 @@
 \affil[c]{Affiliation Three}
 
 % Please give the surname of the lead author for the running footer
-\leadauthor{Lead author last name} 
+\leadauthor{Lead author last name}
 
 % Please add here a significance statement to explain the relevance of your work
-\significancestatement{Authors must submit a 120-word maximum statement about the significance of their research paper written at a level understandable to an undergraduate educated scientist outside their field of speciality. The primary goal of the Significance Statement is to explain the relevance of the work in broad context to a broad readership. The Significance Statement appears in the paper itself and is required for all research papers.}
+\significancestatement{
+  Wings take flight, eyes refract light, and muscles manipulate bones within the interplaying constraints of Newtonian physics. Here we apply the basic tenets of physics to the field of neuromechanical control, to elucidate the neuro-physical-motor landscape upon which evolution and learning operate.
+  With three interweaving hypotheses of motor control in the literature, we fill the gap between the disparate approaches by recontextualizing the problem of force control as a physical constraints problem, thereby lighting the stage of optimal, synergystic, and bayesian control.
+}
 
 % Please include corresponding author, author contribution and author declaration information
 \authorcontributions{Please provide details of author contributions here.}
@@ -32,10 +35,14 @@
 \correspondingauthor{\textsuperscript{2}To whom correspondence should be addressed. E-mail: author.two\@email.com}
 
 % Keywords are not mandatory, but authors are strongly encouraged to provide them. If provided, please include two to five keywords, separated by the pipe symbol, e.g:
-\keywords{Keyword 1 $|$ Keyword 2 $|$ Keyword 3 $|$ ...} 
+\keywords{Neuromechanics $|$ Motor Control $|$ Tendon actuation $|$ ...}
 
 \begin{abstract}
-Please provide an abstract of no more than 250 words in a single paragraph. Abstracts should explain to the general reader the major contributions of the article. References in the abstract must be cited in full within the abstract itself and cited in the text.
+We present a conceptual and computational framework to unify today's theories of neuromuscular control called feasibility theory.
+We begin by describing how the musculoskeletal anatomy of the limb, the need to control individual tendons, and the physics of a motor task uniquely specify the family of all valid muscle activations that accomplish it (its `feasible activation space').
+For our example of static force production with a finger with seven muscles, computational geometry characterizes, in a complete way, the structure of  feasible activation spaces as 3-dimensional polytopes embedded in 7-D.
+The feasible activation space for a given task is \emph{the} landscape where all neuromuscular learning, control, and performance must occur.
+This approach unifies current theories of neuromuscular control because the structure of feasible activation spaces can be separately approximated as either low-dimensional basis functions (synergies), high-dimensional joint probability distributions (Bayesian priors), or fitness landscapes (to optimize cost functions).
 \end{abstract}
 
 \dates{This manuscript was compiled on \today}
@@ -54,13 +61,171 @@ Please provide an abstract of no more than 250 words in a single paragraph. Abst
 % If your first paragraph (i.e. with the \dropcap) contains a list environment (quote, quotation, theorem, definition, enumerate, itemize...), the line after the list may have some extra indentation. If this is the case, add \parshape=0 to the end of the list environment.
 \dropcap{T}his PNAS journal template is provided to help you write your work in the correct journal format.  Instructions for use are provided below.
 
-Note: please start your introduction without including the word ``Introduction'' as a section heading (except for math articles in the Physical Sciences section); this heading is implied in the first paragraphs. 
+Note: Please start your introduction without including the word ``Introduction'' as a section heading (except for math articles in the Physical Sciences section); this heading is implied in the first paragraphs.
 
-\section*{Guide to using this template on Overleaf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Please note that whilst this template provides a preview of the typeset manuscript for submission, to help in this preparation, it will not necessarily be the final publication layout. For more detailed information please see the \href{http://www.pnas.org/site/authors/format.xhtml}{PNAS Information for Authors}.
+\section*{Introduction}
+%motivate the research
+How the nervous system selects specific levels of muscle activations (i.e.\, a muscle activation pattern) for a given motor task continues to be hotly debated.
+Some suggest the nervous system either combines low-dimensional synergies~\cite{kutch2012challenges,steele2013number,bizzi2013neural,dingwell2010walkingvariability,racz2013spatiotemporal,steele2015consequences,alessandro2013musclesynergies}, learns probabilistic representations of valid muscle activation patterns~\cite{kording2004bayesian, Kording2014130,berniker2013examination,sanger2011distributed}, or optimizes physiologically-tenable cost functions~\cite{Chao1978Graphical,Prilutsky2000Muscle,scott2004optimal,todorov2002optimal,crowninshield1981physiologically,higginson2005simulated}.
+At the core of this problem lies the nature of `feasible activation spaces,` and the computational challenge of describing and understanding their high-dimensional structure (for an overview, see~\cite{valero-cuevas2015fundamentals}). A feasible activation space is the family of valid solutions (i.e.\, muscle activation patterns) available to the nervous system to produce a given motor task.
+Fig.~\ref{fig:overview} illustrates the neuromechanical interactions that define the feasible activation space for a particular task.
 
-If you have a question while using this template on Overleaf, please use the help menu (``?'') on the top bar to search for \href{https://www.overleaf.com/help}{help and tutorials}. You can also \href{https://www.overleaf.com/contact}{contact the Overleaf support team} at any time with specific questions about your manuscript or feedback on the template.
+
+\begin{figure*}[th]
+\centering
+\includegraphics[width=17.2cm]{numbered_figures/figure_1_overview.pdf}
+\caption{\textbf{Feasible activation spaces guiding sensorimotor control of a task.} The descending motor command for a given task is issued by the primary motor cortex (a), which projects onto $alpha$-motor neuron pools in the spinal cord (b). The combined drive to all $alpha$-motor neurons of a muscle can be considered its total muscle activation level (a value between 0 and 1). If we consider that motor commands are sent to multiple independently controlled muscles, then the overall motor command can be conceptualized as a multi-dimensional \emph{muscle activation pattern} (i.e., a point) in a high-dimensional \emph{muscle activation space}~\cite{Chao1978Graphical, spoor1983balancing, Kuo1993Human, Valero-Cuevas1998Large} (c). For that muscle activation pattern to be valid, it has to elicit muscle forces (d) capable of satisfying the mechanical requirements of the task---in this case a well directed fingertip force (e). Given the large number of muscles in vertebrates, there is muscle redundancy; there is a large number of valid muscle activation patterns that can produce a given task. We propose that our novel ability to characterize the high-dimensional structure of feasible activation spaces (i) allows to us to compare, contrast and reconcile today's three dominant approaches to redundancy in sensorimotor control (f, g, h).}
+\label{fig:overview}
+\end{figure*}
+
+
+The most the nervous system can do, therefore, is select a specific muscle activation pattern from within the feasible activation space---as muscle activation patterns outside of this space are, by definition, inappropriate for the task.
+In fact, the feasible activation space defines the landscape upon which all neuromuscular learning and performance must occur.
+Understanding neuromuscular control is, therefore, equivalent to understanding how the nervous system finds, explores, inhabits, and exploits the structure of feasible activation spaces~\cite{kutch2012challenges,steele2013number,bizzi2013neural,gallego2017neuron,dingwell2010walkingvariability,racz2013spatiotemporal,steele2015consequences}.
+
+%using dimensionality to say it is a big problem
+But the `curse of dimensionality`~\cite{bellman1958dynamic,bellman2015adaptive,avis1992Pivoting} makes it computationally challenging to calculate, describe, and understand the nature and structure of high-dimensional feasible activation spaces~\cite{valero2009computational,Chao1978Graphical,spoor1983balancing,Kuo1993Human,theodorou2010optimalityEMBC,scholz1999uncontrolled,dingwell2010walkingvariability}—even for an isolated human finger or cat leg generating everyday static forces~\cite{kutch2012challenges,Valero-Cuevas2015high-dimensional,valero-cuevas2015fundamentals,sohn2013cat_bounding_box}. This is due to the computational complexity of algorithms applied upon high dimensional spaces.
+
+%the gap
+Current theories of neuromuscular control are alternative responses to the curse of dimensionality, which at times can be seem as competing, rather than complementary. However, the fundamental neuromechanics of the limb and the physics of the task are the common ground for all theories. Thus, understanding the nature and structure of feasible activation spaces would help compare, contrast and combine these alternative approaches to neuromuscular control.
+
+%our contribution
+We now propose a conceptual and computational framework to provide complete characterizations of feasible activation spaces, thereby contextualizing and unifying multiple theories of neuromuscular control.
+As an example, we leverage prior work~\cite{Valero-Cuevas1998Large,kutch2012challenges,Venkadesan2008Neural} to now describe the structure of the feasible activation space for the seven muscles of the index finger when producing static fingertip force. This is the type of fingertip force observed when, for example, pressing hard on a table without finger movement, and is also referred to as an isometric force task.
+In this case, the feasible activation space is a polytope embedded in 7-dimensional muscle activation space. A polytope is the name given to bounded convex polyhedra in dimensions higher than 3. Our computational approach hinges on the efficient sampling and complete representation of the structure of high-dimensional polytopes.
+This then characterizes all valid muscle activation patterns.
+These computational techniques can scale up to $\sim$40 dimensions, which suffices to analyze the neural control of all muscles in a extant vertebrate limb systems.
+By providing a complete characterization of all muscle activation patterns for a given motor task, we are able to compare, contrast, combine---and reconcile---today's three dominant approaches to neuromuscular control.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section*{Results}
+
+The goal of this work is to use different perspectives to describe the high-dimensional structure of these feasible activation spaces; we then show how these spaces allow us to unify today’s theories of neuromuscular control. We used our realistic index finger model to calculate the feasible activation space for the task of producing static fingertip force in the distal direction (see Fig.~\ref{fig:overview}). The model represents each muscle's contribution to fingertip force as a directed force vector at the fingertip; there are 7 of these force vectors at the index fingertip.
+As described briefly in the Methods, Hit-and-Run is a method in polytope sampling that we use to sample from the infinite number of muscle activations within the feasible activation space. In effect, given a fingertip task force and the maximum linear fingertip forces each muscle creates, we can collect the muscle activations required to produce that task. As we can now collect thousands of muscle activation patterns for any isometric force task, we examined how the feasible activation spaces (and their representations) change with increasing task intensity in the distal direction (Fig.~\ref{fig:overview}e).
+
+We collected points for multiple task intensities between $0\%$ (i.e., pure co-contraction without output force) and $100\%$ of maximal static force.
+
+
+\subsection*{Parallel coordinate visualization naturally reveals the structure of the feasible activation space}
+
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.4\textwidth]{numbered_figures/figure_3_parcoord_schematic.pdf}
+ \caption{\textbf{Characterizing the high-dimensional structure of a feasible activation space via parallel coordinates.} Consider three points (i.e., muscle activation patterns in Supplemental Fig.~\ref{fig:figure_2_hit_and_run_steps}e) from the feasible activation space (a). The activation level for each muscle (i.e., the coordinates of each point) are sewn across three vertical parallel axes (b). As is common when evaluating multiple valid coordination patterns, each point can be assigned a cost as per an assumed \emph{cost function}. The associated cost for each muscle activation pattern can also be shown as an additional dimension. We show three representative cost functions (c). Activation levels are bound between $0$ and $1$, and costs are normalized to their respective observed ranges.}
+ \label{fig:points_to_parcoords_mapping}
+\end{figure}
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.4\textwidth]{numbered_figures/figure_4_parcoord_saturation_edited.png}
+ \caption{\textbf{Activation patterns of the seven muscles of the index finger across six magnitudes of a fingertip force} The connectivity across parallel coordinates shows how muscle activation patterns are related in multiple ways to produce a fingertip force vector between 0 (a) to 100\% (f) of maximal magnitude. At these extremes we have, respectively, the coordination patterns that produce pure co-contraction and the one unique solution for maximal output. In between, we see the how the structure of the feasible activation spaces changes as redundancy is lost. In blue are the activation values, and in red are normalized costs for four cost functions common in the literature. \textit{FDP: flexor digitorum profundus, FDS: flexor digitorum superficialis, EIP: extensor indicis proprious, EDC: extensor digitorum communis, LUM: lumbrical, DI: dorsal interosseous, PI: palmar interosseous.}}
+ \label{fig:figure_4_parcoord}
+\end{figure}
+
+We used Hit-and-Run to sample from feasible activation spaces for 6 task intensities, labeled as task intensities $\alpha$ of $0.0, 0.2, 0.4., 0.6, 0.8$ and $1.0$.
+For each task intensity, we ran 100,000 Hit-and-Run iterations and down-sampled to every $100^{th}$ point to produce 1,000 points that are (in our experiments) uncorrelated and uniformly distributed in $P$.
+Recall that approaching $100\%$ of maximal force shrinks $P$ to a single, unique solution~\cite{Valero-Cuevas1998Large
+}.
+
+
+
+
+Parallel coordinate visualization effectively reveals correlations that exist among the 1,000 valid muscle activation patterns for each magnitude of desired fingertip force, and activation pattern cost, Fig.~\ref{fig:points_to_parcoords_mapping} and Fig.~\ref{fig:figure_4_parcoord}.
+
+
+An interactive parallel coordinate visualization plot can be accessed at \texttt{https://briancohn.github.io/space-parcoords/}. This interactive interface for parallel coordinate visualization allows us to explore subsets of the valid muscle activation patterns.
+
+For example, restricting the range of muscle activation of one or more muscles shows us the necessary activation levels of the remaining muscles.
+This can be used to, say, simulate a 40\% reduction in possible activation to some muscles (e.g., due to a peripheral neuropathy) in the extrinsic extensor muscles of the index finger innervated by the radial nerve (EIP and EDC)~\cite{valero2000quantification}.
+
+\begin{figure}[p]
+ \centering
+ \includegraphics[width=0.4\textwidth]{supplemental_figures/parcoord_supplemental.pdf}
+ \caption{\textbf{Supplemental Figure: Posthoc constraints on a task intensity of 80\%} Here we show four unique examples of constraints applied to the points collected from the feasible activation space. With this, we can rapidly predict how index finger control must change in the event of weakness in specific muscles. We also can see how many points remain once the constraints are added—signaling how the structure of the feasible force space is affected.}
+  \label{fig:parcoord_supplemental}
+\end{figure}
+
+Figures in the Supplemental Material show how, for 80\% of task intensity (i.e., 80\% of maximal force output), only 29\% (i.e., $\frac{290}{1,000}$) of all possible solutions survive when capping the maximal excitation of EIP and EDC at 60\%. Thus, any neural or muscle dysfunction that compromises the ability of the extensor muscles will limit the choices the nervous system has to produce this force---even at sub-maximal levels. These results further challenge the notion of muscle redundancy as discussed in detail in~\cite{kutch2011muscle,valero-cuevas2015fundamentals}.
+
+Moreover, this same case of task intensity of 80\% and maximal excitation of EIP $\le$60\% reveals important and counterintuitive consequences in the control of musculature. For example, the range of feasible activation level for some muscles do not change too much (FPD, FDS, and LUM), but does change for others (DI and PI). Most interestingly, the range of costs across valid solutions remains broad.
+
+Similarly, we can describe any subset of muscle activation patterns associated with specific ranges for a given cost function. Figures in the Supplemental Material also show how can characterize all muscle activation patterns associated with the lowest 10\% of L2 weighted costs. The coordination patterns that meet this strict criterion are quite different from one another (note the broad ranges and criss-cross patterns).
+
+These relationships among all valid 7-dimensional muscle activations patterns reveal important aspects of the structure of the feasible activation space, and its associated cost landscapes. We see one muscle can affect other muscles in different ways: while limiting PI to 20\% of maximal activation eliminates 30.1\% of the valid solutions, limiting DI to 20\% eliminates 42.8\% of them. Similarly we can distinguish between changes in the extreme values of muscle activation from changes in the number of valid solutions. Consider the range of activation for DI and PI at task intensity of 80\% which lies between 0 and 0.52 and 0.39, respectively. Limiting DI to 20\% pulls PI’s maximum down by nearly 0.20, and the converse has nearly the same effect. However, in both cases, the median activation among surviving solutions changes no more than 0.06. This emphasizes that understanding feasible activation spaces requires and understanding of its internal density and not just its bounds. The density of \textbf{between-muscle} connectivity is seen directly by the density of the lines connecting the different muscles and cost functions. The \textbf{within-muscle} density can be computed by binning points at each activation level value.
+
+Lastly, those same connecting lines in the parallel coordinate visualization allow us to characterize the interrelatedness of valid solutions in 7-dimensional space. For example, the lines connecting FDP and FDS are mostly parallel, indicating a strong positive correlation. In fact, looking at these lines allows one to directly see and understand the Pearson product-moment correlation coefficients of 0.99, -0.50, and -0.06 in the adjacent muscle pairs FDP—FDS, LUM—DI, and EIP—EDC, respectively. The interactive parallel coordinate visualization also allows for any pairwise comparison by simply dragging and reordering the vertical axes---and hovering over individual data rows highlight an individual valid activation pattern atop all others.
+
+
+\subsection*{Low-dimensional approximations to the feasible activation space}
+
+We applied PCA (Principal Component Analysis) to the valid muscle activation patterns sampled uniformly at random from the feasible activation space. We show results for 10 levels of task intensity. However, we did this in an iterative fashion to replicate the fact that experimental studies can only collect a finite amount of data from each subjects. Thus, from the total pool of 10,000 sub-sampled points sampled by Hit-and-Run (i.e., accepting every 100th point from 100,000 total samples to remove potential autocorrelation among points); sample sizes of 10, 100, and 1,000 points (i.e., simulated `experimental' sample sizes) were replicated 100 times each. We applied PCA to each set of sampled points.
+
+The variance explained by PC1 and PC2 (and its boxplot distribution) for all iterations are shown to change with task intensity for all sample sizes (Fig.~\ref{fig:pca_variance_explained}). Explaining about 13-15\% of the variance, PC3 is exactly equal to the remaining variance not explained by the first two components---this is a result of the feasible activation space being a 3-dimensional polytope $P$ by construction (i.e., recall that 4 task constraints applied to 7 muscles produce a 3-dimensional polytope embedded in the 7-dimensional muscle activation space).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.4\textwidth]{numbered_figures/figure_7_pca_variance_explained.pdf}
+\caption{\textbf{Approximating the structure of feasible activation spaces via principal components analysis (PCA) is sensitive to both the number of points used and the intensity of the task.} Rows show the variance explained by the first (top) and second (bottom) principal components with increasing data points (left to right). It is not possible to generalize the variance explained across tasks intensities, and large numbers of points (i.e., $>$ 100) are needed to confidently estimate the real changes in variance explained as a function of task intensity (cf. points labeled a, b, c).}
+\label{fig:pca_variance_explained}
+
+\end{figure}
+
+The boxplots in Fig.~\ref{fig:pca_variance_explained} quantify how different amounts of data change the estimates of variance explained by PC1 and PC2 with task intensity (c.f. labels a vs. b vs. c). We see this dispersion is small in the center and right columns.
+Note that the ratio of variance explained between PC1 and PC2 between 50 to 80\% of task intensity is indicative of changes in the aspect ratio of the feasible activation space---which we see changes with task intensity.
+
+Importantly, using experimentally realistic samples sizes of 10 repetitions per subject (leftmost column) not only does not capture this change, but its standard deviation is large enough to blur the statistically significant differences that are known to appear with larger (but experimentally unrealistic) sample sizes.
+The impact of impoverishing the number of samples fed to PCA reminds us that inadequate amounts of data obfuscate the underlying changes in the structure of the data analyzed (Fig.~\ref{fig:pca_variance_explained}).
+
+There were also important changes in the loadings of the PC1 and PC2 vectors. While the ratio of variance explained between PC1 and PC2 gives a sense of the aspect ratio of the feasible activation space, the loadings of PC1 and PC2 speak to its orientation.
+Fig.~\ref{fig:pca_loadings_detail} shows how the loadings of the PC1 and PC2 vectors change across labels a, b, and c (Fig.~\ref{fig:pca_variance_explained}) corresponding to 11, 66 and 88\% of task intensity, respectively.
+What these loadings indicate are the direction in 7-dimensional space, which changes dramatically.
+
+These changes we see in (i) the lower and upper bounds of activations, and in (ii) the relative variance explained and (iii) loadings for PC1 and PC2, demonstrate that the size, shape and orientation of the feasible activation space changes with task intensity. Moreover, these changes represent the best-case scenario given the absence of experimental noise, within- and across-subject variability, and measurement error.
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=0.40\textheight]{supplemental_figures/pc_loadings_FDP_made_positive.pdf}
+\caption{\textbf{PCA loadings change dramatically as task intensity increases} For each of 1,000 task intensities, we collected 1,000 points from the feasible activation space, and computed three principal components.
+Note that the signs of the loadings depend on the numerics of the PCA algorithm, and are subject to arbitrary flips in sign---thus for clarity we plot them such that FDP's loadings in PC1 are positive at all task intensities.
+Synergies at representative task intensities a, b, c in Fig.~\ref{fig:pca_variance_explained} differ. This reflects changes in the geometric structure of the feasible activation space as redundancy is lost.}
+\label{fig:pca_loadings_detail}
+\end{figure}
+
+
+\subsection*{Changes in the probabilistic structure of the feasible activation space with increasing task intensity, or how muscle redundancy is lost}
+The maximal static fingertip force vector in a given direction is produced by a single and unique combination of muscle activations. In contrast, any sub-maximal magnitude of that same vector is produced by an infinite number of solutions~\cite{spoor1983balancing,Chao1978Graphical,valero-cuevas2015fundamentals,Valero-Cuevas2000Predictive}.
+Our analysis of feasible activation spaces at different task intensities allows us to characterize how this redundancy changes and is lost.
+The histogram heatmaps in Fig.~\ref{fig:figure_6_histogram_heatmap} illustrate the changes and shrinking of within-muscle density of valid activation levels for sub-maximal forces, converging to a single solution for maximal force output. These surface plots show how the normalized histograms (of 1,000 valid activation levels for each muscle) change at each of 100 levels of task intensity between 0 and 1. Following a muscle’s column from bottom to top shows the activation histograms for each magnitude of distal force and ending, naturally, with a spike about the unique value at maximal force production.
+
+\begin{figure*}[htb]
+\centering
+\includegraphics[width=17.8cm]{numbered_figures/figure_6_histogram_surfaces_v2.pdf}
+\caption{\textbf{The within-muscle probabilistic structure of feasible muscle patterns across 1,000 levels of fingertip task intensity.} The changes in the breadth and height for each muscle reveal muscle-specific consequences of task intensity on their probability distributions. The cross-section of each density plot is the 50-bin histogram of activation for each muscle, at that task intensity. Height represents the percentage of solutions for that task. The axis going into the page indicates increasing fingertip task intensity up to 100\% of maximal. Color is used to provide perspective.}
+\label{fig:figure_6_histogram_heatmap}
+\end{figure*}
+
+
+The flat areas in each surface plot (e.g. clearly visible for DI) represent muscle activation levels that are not valid for that task intensity. That is, there exist no valid muscle activation patterns that contain that muscle at that level, and thus no points are found there.
+
+These plots show the nature and rate of convergence to the unique solution for maximal force output across muscles.
+We find that the histograms of activation levels for each muscle need not be symmetric, nor have the same shape (skewness and kurtosis) as the magnitude of the output force increases.
+For some muscles the convergence accelerates after 60\% or 80\% of task intensity (as in LUM and EIP), while others converge monotonically along the entire progression (e.g. DI and PI).
+The peaks (i.e. modes) of each histogram at each task intensity represents the slice of the polytope that has the largest relative volume along that muscle dimension (i.e., greatest frequency of that level of muscle activation across all valid solutions). Importantly, for most muscles (FDP, FDS, EIP, EDC, and LUM), the mode is not necessarily located at the same relative level of activation needed for maximal force output. That is, the histogram at high levels of force is not simply a shifted version of the histogram at low levels of force. The histograms for DI are the exception, whose modes seems to scale linearly with task intensity.
+
+%bounding box representation
+These histograms, in conjunction with the results in the parallel coordinate visualization, also demonstrate that the structure of feasible activation spaces cannot be inferred from their bounding boxes alone (i.e., upper and lower activation bounds for each muscle).
+An immediate example is how, for most task intensities, both EIP and LUM have similar lower and upper bounds near 0 and 1, respectively---yet their distributions are thoroughly distinct.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
 
 \subsection*{Author Affiliations}
 
@@ -68,7 +233,7 @@ Include department, institution, and complete address, with the ZIP/postal code,
 
 \subsection*{Submitting Manuscripts}
 
-All authors must submit their articles at \href{http://www.pnascentral.org/cgi-bin/main.plex}{PNAScentral}. If you are using Overleaf to write your article, you can use the ``Submit to PNAS'' option in the top bar of the editor window. 
+All authors must submit their articles at \href{http://www.pnascentral.org/cgi-bin/main.plex}{PNAScentral}. If you are using Overleaf to write your article, you can use the ``Submit to PNAS'' option in the top bar of the editor window.
 
 \subsection*{Format}
 
@@ -80,14 +245,14 @@ PNAS generally uses a two-column format averaging 67 characters, including space
 
 \subsection*{References}
 
-References should be cited in numerical order as they appear in text; this will be done automatically via bibtex, e.g. \cite{belkin2002using} and \cite{berard1994embedding,coifman2005geometric}. All references, including for the SI, should be included in the main manuscript file. References appearing in both sections should not be duplicated.  SI references included in tables should be included with the main reference section. 
+References should be cited in numerical order as they appear in text; this will be done automatically via bibtex, e.g. \cite{belkin2002using} and \cite{berard1994embedding,coifman2005geometric}. All references, including for the SI, should be included in the main manuscript file. References appearing in both sections should not be duplicated.  SI references included in tables should be included with the main reference section.
 
 \subsection*{Data Archival}
 
 PNAS must be able to archive the data essential to a published article. Where such archiving is not possible, deposition of data in public databases, such as GenBank, ArrayExpress, Protein Data Bank, Unidata, and others outlined in the Information for Authors, is acceptable.
 
 \subsection*{Language-Editing Services}
-Prior to submission, authors who believe their manuscripts would benefit from professional editing are encouraged to use a language-editing service (see list at www.pnas.org/site/authors/language-editing.xhtml). PNAS does not take responsibility for or endorse these services, and their use has no bearing on acceptance of a manuscript for publication. 
+Prior to submission, authors who believe their manuscripts would benefit from professional editing are encouraged to use a language-editing service (see list at www.pnas.org/site/authors/language-editing.xhtml). PNAS does not take responsibility for or endorse these services, and their use has no bearing on acceptance of a manuscript for publication.
 
 \begin{figure}%[tbhp]
 \centering
@@ -99,7 +264,7 @@ Prior to submission, authors who believe their manuscripts would benefit from pr
 \subsection*{Digital Figures}
 \label{sec:figures}
 
-Only TIFF, EPS, and high-resolution PDF for Mac or PC are allowed for figures that will appear in the main text, and images must be final size. Authors may submit U3D or PRC files for 3D images; these must be accompanied by 2D representations in TIFF, EPS, or high-resolution PDF format.  Color images must be in RGB (red, green, blue) mode. Include the font files for any text. 
+Only TIFF, EPS, and high-resolution PDF for Mac or PC are allowed for figures that will appear in the main text, and images must be final size. Authors may submit U3D or PRC files for 3D images; these must be accompanied by 2D representations in TIFF, EPS, or high-resolution PDF format.  Color images must be in RGB (red, green, blue) mode. Include the font files for any text.
 
 Figures and Tables should be labelled and referenced in the standard way using the \verb|\label{}| and \verb|\ref{}| commands.
 
@@ -118,7 +283,7 @@ Please note that this option may run into problems with floats and footnotes, as
 \begin{align*}
 (x+y)^3&=(x+y)(x+y)^2\\
        &=(x+y)(x^2+2xy+y^2) \numberthis \label{eqn:example} \\
-       &=x^3+3x^2y+3xy^3+x^3. 
+       &=x^3+3x^2y+3xy^3+x^3.
 \end{align*}
 \end{widetext}
 
@@ -157,23 +322,23 @@ Supply a composable U3D or PRC file so that it may be edited and composed. Autho
 
 Supply Word, RTF, or LaTeX files (LaTeX files must be accompanied by a PDF with the same file name for visual reference); include only one table per file. Do not use tabs or spaces to separate columns in Word tables.
 
-\subsubsection*{SI Datasets} 
+\subsubsection*{SI Datasets}
 
-Supply Excel (.xls), RTF, or PDF files. This file type will be published in raw format and will not be edited or composed. 
+Supply Excel (.xls), RTF, or PDF files. This file type will be published in raw format and will not be edited or composed.
 
 \subsubsection*{SI Movies}
 
-Supply Audio Video Interleave (avi), Quicktime (mov), Windows Media (wmv), animated GIF (gif), or MPEG files and submit a brief legend for each movie in a Word or RTF file. All movies should be submitted at the desired reproduction size and length. Movies should be no more than 10 MB in size. 
+Supply Audio Video Interleave (avi), Quicktime (mov), Windows Media (wmv), animated GIF (gif), or MPEG files and submit a brief legend for each movie in a Word or RTF file. All movies should be submitted at the desired reproduction size and length. Movies should be no more than 10 MB in size.
 
 \subsubsection*{Still images}
 
-Authors must provide a still image from each video file. Supply TIFF, EPS, high-resolution PDF, JPEG, or GIF files. 
+Authors must provide a still image from each video file. Supply TIFF, EPS, high-resolution PDF, JPEG, or GIF files.
 
 \subsubsection*{Appendices}
 
 PNAS prefers that authors submit individual source files to ensure readability. If this is not possible, supply a single PDF file that contains all of the SI associated with the paper. This file type will be published in raw format and will not be edited or composed.
 
-\matmethods{Please describe your materials and methods here. This can be more than one paragraph, and may contain subsections and equations as required. Authors should include a statement in the methods section describing how readers will be able to access the data in the paper. 
+\matmethods{Please describe your materials and methods here. This can be more than one paragraph, and may contain subsections and equations as required. Authors should include a statement in the methods section describing how readers will be able to access the data in the paper.
 
 \subsection*{Subsection for Method}
 Example text for subsection.
