@@ -8,19 +8,21 @@
 % {pnasmathematics} = Template for a one-column mathematics article
 % {pnasinvited} = Template for a PNAS invited submission
 
-\title{Template for preparing your research report submission to PNAS using Overleaf}
+\title{Feasibility theory reconciles alternative approaches to neuromuscular control}
 
 % Use letters for affiliations, numbers to show equal authorship (if applicable) and to indicate the corresponding author
-\author[a,c,1]{Author One}
-\author[b,1,2]{Author Two}
-\author[a]{Author Three}
+\author[a,1]{Brian A. Cohn}
+\author[b,1]{May Szedl\'{a}k}
+\author[b]{Bernd G{\"a}rtner}
+\author[c,d]{Francisco J. Valero-Cuevas}
 
-\affil[a]{Affiliation One}
-\affil[b]{Affiliation Two}
-\affil[c]{Affiliation Three}
+\affil[a]{University of Southern California, Department of Computer Science, Los Angeles, CA, USA}
+\affil[b]{ETH Zurich, Department of Theoretical Computer Science, Zurich, Switzerland}
+\affil[c]{University of Southern California, Department of Biomedical Engineering, Los Angeles, CA, USA}
+\affil[d]{University of Southern California, Division of Biokinesiology and Physical Therapy, Los Angeles, CA, USA}
 
 % Please give the surname of the lead author for the running footer
-\leadauthor{Lead author last name}
+\leadauthor{Cohn}
 
 % Please add here a significance statement to explain the relevance of your work
 \significancestatement{
@@ -61,11 +63,7 @@ This approach unifies current theories of neuromuscular control because the stru
 % If your first paragraph (i.e. with the \dropcap) contains a list environment (quote, quotation, theorem, definition, enumerate, itemize...), the line after the list may have some extra indentation. If this is the case, add \parshape=0 to the end of the list environment.
 \dropcap{T}his PNAS journal template is provided to help you write your work in the correct journal format.  Instructions for use are provided below.
 
-Note: Please start your introduction without including the word ``Introduction'' as a section heading (except for math articles in the Physical Sciences section); this heading is implied in the first paragraphs.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section*{Introduction}
 %motivate the research
 How the nervous system selects specific levels of muscle activations (i.e.\, a muscle activation pattern) for a given motor task continues to be hotly debated.
 Some suggest the nervous system either combines low-dimensional synergies~\cite{kutch2012challenges,steele2013number,bizzi2013neural,dingwell2010walkingvariability,racz2013spatiotemporal,steele2015consequences,alessandro2013musclesynergies}, learns probabilistic representations of valid muscle activation patterns~\cite{kording2004bayesian, Kording2014130,berniker2013examination,sanger2011distributed}, or optimizes physiologically-tenable cost functions~\cite{Chao1978Graphical,Prilutsky2000Muscle,scott2004optimal,todorov2002optimal,crowninshield1981physiologically,higginson2005simulated}.
@@ -114,7 +112,7 @@ We collected points for multiple task intensities between $0\%$ (i.e., pure co-c
 
 \begin{figure}[htbp]
  \centering
- \includegraphics[width=4cm]{numbered_figures/figure_3_parcoord_schematic.pdf}
+ \includegraphics[width=8.6cm]{numbered_figures/figure_3_parcoord_schematic.pdf}
  \caption{\textbf{Characterizing the high-dimensional structure of a feasible activation space via parallel coordinates.} Consider three points (i.e., muscle activation patterns in Supplemental Fig.~\ref{fig:figure_2_hit_and_run_steps}e) from the feasible activation space (a). The activation level for each muscle (i.e., the coordinates of each point) are sewn across three vertical parallel axes (b). As is common when evaluating multiple valid coordination patterns, each point can be assigned a cost as per an assumed \emph{cost function}. The associated cost for each muscle activation pattern can also be shown as an additional dimension. We show three representative cost functions (c). Activation levels are bound between $0$ and $1$, and costs are normalized to their respective observed ranges.}
  \label{fig:points_to_parcoords_mapping}
 \end{figure}
@@ -265,111 +263,6 @@ This line of thinking has consequences to neurorehabilitation. Neurological cond
 
 A probabilistic landscape for neuromuscular function begins to explain why neurorehabilitation in aging adults is so difficult (e.g., ~\cite{hardwick2016motor}) and why motor learning in children takes thousands of repetitions~\cite{adolph2012thousands}---while also generating new rehabilitation strategies, and testable hypotheses around them, that leverage knowledge of the nature and structure of feasible activation spaces.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection*{Author Affiliations}
-
-Include department, institution, and complete address, with the ZIP/postal code, for each author. Use lower case letters to match authors with institutions, as shown in the example. Authors with an ORCID ID may supply this information at submission.
-
-\subsection*{Submitting Manuscripts}
-
-All authors must submit their articles at \href{http://www.pnascentral.org/cgi-bin/main.plex}{PNAScentral}. If you are using Overleaf to write your article, you can use the ``Submit to PNAS'' option in the top bar of the editor window.
-
-\subsection*{Format}
-
-Many authors find it useful to organize their manuscripts with the following order of sections;  Title, Author Affiliation, Keywords, Abstract, Significance Statement, Results, Discussion, Materials and methods, Acknowledgments, and References. Other orders and headings are permitted.
-
-\subsection*{Manuscript Length}
-
-PNAS generally uses a two-column format averaging 67 characters, including spaces, per line. The maximum length of a Direct Submission research article is six pages and a PNAS PLUS research article is ten pages including all text, spaces, and the number of characters displaced by figures, tables, and equations.  When submitting tables, figures, and/or equations in addition to text, keep the text for your manuscript under 39,000 characters (including spaces) for Direct Submissions and 72,000 characters (including spaces) for PNAS PLUS.
-
-\subsection*{References}
-
-References should be cited in numerical order as they appear in text; this will be done automatically via bibtex, e.g. \cite{belkin2002using} and \cite{berard1994embedding,coifman2005geometric}. All references, including for the SI, should be included in the main manuscript file. References appearing in both sections should not be duplicated.  SI references included in tables should be included with the main reference section.
-
-\subsection*{Data Archival}
-
-PNAS must be able to archive the data essential to a published article. Where such archiving is not possible, deposition of data in public databases, such as GenBank, ArrayExpress, Protein Data Bank, Unidata, and others outlined in the Information for Authors, is acceptable.
-
-\subsection*{Language-Editing Services}
-Prior to submission, authors who believe their manuscripts would benefit from professional editing are encouraged to use a language-editing service (see list at www.pnas.org/site/authors/language-editing.xhtml). PNAS does not take responsibility for or endorse these services, and their use has no bearing on acceptance of a manuscript for publication.
-
-\subsection*{Digital Figures}
-\label{sec:figures}
-
-Only TIFF, EPS, and high-resolution PDF for Mac or PC are allowed for figures that will appear in the main text, and images must be final size. Authors may submit U3D or PRC files for 3D images; these must be accompanied by 2D representations in TIFF, EPS, or high-resolution PDF format.  Color images must be in RGB (red, green, blue) mode. Include the font files for any text.
-
-Figures and Tables should be labelled and referenced in the standard way using the \verb|\label{}| and \verb|\ref{}| commands.
-
-Figure \ref{fig:frog} shows an example of how to insert a column-wide figure. To insert a figure wider than one column, please use the \verb|\begin{figure*}...\end{figure*}| environment. Figures wider than one column should be sized to 11.4 cm or 17.8 cm wide.
-
-\subsection*{Single column equations}
-
-Authors may use 1- or 2-column equations in their article, according to their preference.
-
-To allow an equation to span both columns, options are to use the \verb|\begin{figure*}...\end{figure*}| environment mentioned above for figures, or to use the \verb|\begin{widetext}...\end{widetext}| environment as shown in equation \ref{eqn:example} below.
-
-Please note that this option may run into problems with floats and footnotes, as mentioned in the \href{http://texdoc.net/pkg/cuted}{cuted package documentation}. In the case of problems with footnotes, it may be possible to correct the situation using commands \verb|\footnotemark| and \verb|\footnotetext|.
-
-%% Do not use widetext if paper is in single column.
-\begin{widetext}
-\begin{align*}
-(x+y)^3&=(x+y)(x+y)^2\\
-       &=(x+y)(x^2+2xy+y^2) \numberthis \label{eqn:example} \\
-       &=x^3+3x^2y+3xy^3+x^3.
-\end{align*}
-\end{widetext}
-
-\begin{table}%[tbhp]
-\centering
-\caption{Comparison of the fitted potential energy surfaces and ab initio benchmark electronic energy calculations}
-\begin{tabular}{lrrr}
-Species & CBS & CV & G3 \\
-\midrule
-1. Acetaldehyde & 0.0 & 0.0 & 0.0 \\
-2. Vinyl alcohol & 9.1 & 9.6 & 13.5 \\
-3. Hydroxyethylidene & 50.8 & 51.2 & 54.0\\
-\bottomrule
-\end{tabular}
-
-\addtabletext{nomenclature for the TSs refers to the numbered species in the table.}
-\end{table}
-
-\subsection*{Supporting Information (SI)}
-
-The main text of the paper must stand on its own without the SI. Refer to SI in the manuscript at an appropriate point in the text. Number supporting figures and tables starting with S1, S2, etc. Authors are limited to no more than 10 SI files, not including movie files. Authors who place detailed materials and methods in SI must provide sufficient detail in the main text methods to enable a reader to follow the logic of the procedures and results and also must reference the online methods. If a paper is fundamentally a study of a new method or technique, then the methods must be described completely in the main text. Because PNAS edits SI and composes it into a single PDF, authors must provide the following file formats only.
-
-\subsubsection*{SI Text}
-
-Supply Word, RTF, or LaTeX files (LaTeX files must be accompanied by a PDF with the same file name for visual reference).
-
-\subsubsection*{SI Figures}
-
-Provide a brief legend for each supporting figure after the supporting text. Provide figure images in TIFF, EPS, high-resolution PDF, JPEG, or GIF format; figures may not be embedded in manuscript text. When saving TIFF files, use only LZW compression; do not use JPEG compression. Do not save figure numbers, legends, or author names as part of the image. Composite figures must be pre-assembled.
-
-\subsubsection*{3D Figures}
-
-Supply a composable U3D or PRC file so that it may be edited and composed. Authors may submit a PDF file but please note it will be published in raw format and will not be edited or composed.
-
-\subsubsection*{SI Tables}
-
-Supply Word, RTF, or LaTeX files (LaTeX files must be accompanied by a PDF with the same file name for visual reference); include only one table per file. Do not use tabs or spaces to separate columns in Word tables.
-
-\subsubsection*{SI Datasets}
-
-Supply Excel (.xls), RTF, or PDF files. This file type will be published in raw format and will not be edited or composed.
-
-\subsubsection*{SI Movies}
-
-Supply Audio Video Interleave (avi), Quicktime (mov), Windows Media (wmv), animated GIF (gif), or MPEG files and submit a brief legend for each movie in a Word or RTF file. All movies should be submitted at the desired reproduction size and length. Movies should be no more than 10 MB in size.
-
-\subsubsection*{Still images}
-
-Authors must provide a still image from each video file. Supply TIFF, EPS, high-resolution PDF, JPEG, or GIF files.
-
-\subsubsection*{Appendices}
-
-PNAS prefers that authors submit individual source files to ensure readability. If this is not possible, supply a single PDF file that contains all of the SI associated with the paper. This file type will be published in raw format and will not be edited or composed.
-
 \matmethods{
 The methods to obtain feasible activation spaces for `tendon-driven' limbs are described in detail in the textbook \emph{Fundamentals of Neuromechanics} and references therein~\cite{valero-cuevas2015fundamentals}. This tendon-driven approach explicitly and distinctly avoids the conceptual approach to combine multiple muscle actions into net torques at each joint. Rather, it emphasizes studying the individual actions of all muscles at all levels of analysis, from their neural activation to their contributions to fingertip force. We describe them briefly here.
 \label{s:methods}
@@ -488,19 +381,6 @@ f_{palmar} = 0 \\
 
 These four constraints on the static output of the finger yield a 3-dimensional (i.e., $7-4=3$) polytope $P$ embedded in 7-dimensional activation space.
 For details on how to create such models, apply task constraints and find such polytopes via vertex enumeration methods, see~\cite{valero-cuevas2015fundamentals}.
-
-Thus all valid output wrenches will have the form
-
-\begin{equation}
-\label{eq:wrench}
-\textbf{w}=
-\begin{pmatrix}
-0\\
-\text{Desired distal task intensity in N} \\
-0\\
-0
-\end{pmatrix}
-\end{equation}
 
 For the index finger model used in this paper, the published maximal feasible force in the distal direction is 28.81 Newtons. We defined the normalized desired distal task intensity as a value ranging between $0$ and $1$, i.e., each submaximal force can be produced by any of the points contained in its corresponding feasible activation space. For the production of a maximal force with $\alpha=1$ the feasible activation space shrinks to a single point~\cite{spoor1983balancing,Chao1978Graphical,chvatal1983linear,Valero-Cuevas2000Scaling}.
 
