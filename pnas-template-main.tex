@@ -119,7 +119,7 @@ We collected points for multiple task intensities between $0\%$ (i.e., pure co-c
 
 \begin{figure}[htbp]
  \centering
- \includegraphics[width=0.4\textwidth]{numbered_figures/figure_4_parcoord_saturation_edited.png}
+ \includegraphics[width=8.6cm]{numbered_figures/figure_4_parcoord_saturation_edited.png}
  \caption{\textbf{Activation patterns of the seven muscles of the index finger across six magnitudes of a fingertip force} The connectivity across parallel coordinates shows how muscle activation patterns are related in multiple ways to produce a fingertip force vector between 0 (a) to 100\% (f) of maximal magnitude. At these extremes we have, respectively, the coordination patterns that produce pure co-contraction and the one unique solution for maximal output. In between, we see the how the structure of the feasible activation spaces changes as redundancy is lost. In blue are the activation values, and in red are normalized costs for four cost functions common in the literature. \textit{FDP: flexor digitorum profundus, FDS: flexor digitorum superficialis, EIP: extensor indicis proprious, EDC: extensor digitorum communis, LUM: lumbrical, DI: dorsal interosseous, PI: palmar interosseous.}}
  \label{fig:figure_4_parcoord}
 \end{figure}
@@ -166,13 +166,13 @@ The variance explained by PC1 and PC2 (and its boxplot distribution) for all ite
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{numbered_figures/figure_7_pca_variance_explained.pdf}
+\includegraphics[width=8.6cm]{numbered_figures/figure_7_pca_variance_explained.pdf}
 \caption{\textbf{Approximating the structure of feasible activation spaces via principal components analysis (PCA) is sensitive to both the number of points used and the intensity of the task.} Rows show the variance explained by the first (top) and second (bottom) principal components with increasing data points (left to right). It is not possible to generalize the variance explained across tasks intensities, and large numbers of points (i.e., $>$ 100) are needed to confidently estimate the real changes in variance explained as a function of task intensity (cf. points labeled a, b, c).}
 \label{fig:pca_variance_explained}
 
 \end{figure}
 
-The boxplots in Fig.~\ref{fig:pca_variance_explained} quantify how different amounts of data change the estimates of variance explained by PC1 and PC2 with task intensity (c.f. labels a vs. b vs. c). We see this dispersion is small in the center and right columns.
+The boxplots in Fig.~\ref{fig:pca_variance_explained} quantify how different amounts of data change the estimates of variance explained by PC1 and PC2 with task intensity (c.f. labels a vs.\ b vs.\ c). We see this dispersion is small in the center and right columns.
 Note that the ratio of variance explained between PC1 and PC2 between 50 to 80\% of task intensity is indicative of changes in the aspect ratio of the feasible activation space---which we see changes with task intensity.
 
 Importantly, using experimentally realistic samples sizes of 10 repetitions per subject (leftmost column) not only does not capture this change, but its standard deviation is large enough to blur the statistically significant differences that are known to appear with larger (but experimentally unrealistic) sample sizes.
@@ -187,7 +187,7 @@ These changes we see in (i) the lower and upper bounds of activations, and in (i
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[height=11.2cm]{supplemental_figures/pc_loadings_FDP_made_positive.pdf}
+\includegraphics[height=21cm]{supplemental_figures/pc_loadings_FDP_made_positive.pdf}
 \caption{\textbf{PCA loadings change dramatically as task intensity increases} For each of 1,000 task intensities, we collected 1,000 points from the feasible activation space, and computed three principal components.
 Note that the signs of the loadings depend on the numerics of the PCA algorithm, and are subject to arbitrary flips in sign---thus for clarity we plot them such that FDP's loadings in PC1 are positive at all task intensities.
 Synergies at representative task intensities a, b, c in Fig.~\ref{fig:pca_variance_explained} differ. This reflects changes in the geometric structure of the feasible activation space as redundancy is lost.}
@@ -309,11 +309,11 @@ Geometrically speaking, the feasible activation space is a $(n-m)$-dimensional c
 Calculating the geometric properties of convex polytopes in high dimensions is computationally challenging. Taking the generalized concept of an $n$-dimensional volume as an example of a geometric property of interest, the exact volume computations for n-dimensional polytopes is known to be tractable only in a polynomial amount of time (i.e., $\#P$-hard)~\cite{Dyer}.
 Currently available volume algorithms can only handle polytopes embedded in small dimensions like 10 or slightly more~\cite{Bueler2}. Studying vertebrate limbs in general, however, can require including several dozen muscles, such as our studies of a 17-muscle human arm and a 31-muscle cat hindlimb model~\cite{Valero-Cuevas2015high-dimensional}; and other limb models have over 40 muscles such as~\cite{arnold2010model, kutch2012challenges, hamner2010muscle, de2014human}.
 
-Similar difficulties arise when computing other geometric properties such as the shape and aspect ratio of $P$ in high dimensions. We and others have described polytopes $P$ by their bounding box (i..e, the range of values in every dimension)~\cite{sohn2013cat_bounding_box,kutch2011muscle}, but that singularly overestimates the shape and volume of the feasible activation space as discussed in~\cite{Valero-Cuevas2015high-dimensional}.
+Similar difficulties arise when computing other geometric properties such as the shape and aspect ratio of $P$ in high dimensions. We and others have described polytopes $P$ by their bounding box (i.e., the range of values in every dimension)~\cite{sohn2013cat_bounding_box,kutch2011muscle}, but that singularly overestimates the shape and volume of the feasible activation space as discussed in~\cite{Valero-Cuevas2015high-dimensional}.
 Take Fig.~\ref{fig:figure_2_hit_and_run_steps}e as an example, where the bounding box of the 2-dimensional polygon has a volume---even though a plane has zero volume---, and can be almost as large as the positive unit cube itself. Similar problems arise in the interpretation of the inscribed and circumscribed ball~\cite{inouye2014optimizing}.
 
 We applied the Hit-and-Run method to sample points from the feasible activation space—a method that is evaluated and justified in ~\cite{valero-cuevas2015fundamentals, YYY_IEEE_STR}.
-This complete probabilistic method describes the structure of feasible activation spaces $P$ with a set of uniformly-at-random muscle activation patterns that produce the same wrench. This enables us to derive descriptive statistics, histograms, and point densities of the set of valid muscle activation patterns $\textbf{a}$ uniformly sampled from the polytope. To do so, we use the Hit-and-Run method. We have presented a detailed explanation of the theory (In Chapter X of \cite{YYY_FUNDAMENTALS_BOOK}), have justified the utility of this method on tendon-driven models of the index finger \cite{YYY_IEEE_STR}.
+This complete probabilistic method describes the structure of feasible activation spaces $P$ with a set of uniformly-at-random muscle activation patterns that produce the same wrench. This enables us to derive descriptive statistics, histograms, and point densities of the set of valid muscle activation patterns $\textbf{a}$ uniformly sampled from the polytope. To do so, we use the Hit-and-Run method. We have presented a detailed explanation of the theory (In Chapter 9 of \cite{valero-cuevas2015fundamentals}), and have justified the utility of this method on tendon-driven models of the index finger \cite{YYY_IEEE_STR}.
 
 \subsection*{Example of a tendon-driven system}
 \paragraph*{Realistic 3-D model of a 7-muscle human index finger}
@@ -323,9 +323,8 @@ The model is described in detail elsewhere~\cite{valero-cuevas2009computational}
 Briefly, the input to the model is a 7-D muscle activation pattern $\textbf{a}$, and the output is a 4-D wrench (i.e., static forces and torque) at the fingertip $\textbf{w}$
 
 \begin{eqnarray}
-\textbf{w} = H \textbf{a} \\
-H=J^{-T}RF_o \\
-H \in \mathbb{R}^{4 \times 7}
+\textbf{w} &= H \textbf{a} \\
+H&=J^{-T}RF_o, H \in \mathbb{R}^{4 \times 7} \\
 \end{eqnarray}
 
 where
@@ -382,13 +381,13 @@ f_{palmar} = 0 \\
 These four constraints on the static output of the finger yield a 3-dimensional (i.e., $7-4=3$) polytope $P$ embedded in 7-dimensional activation space.
 For details on how to create such models, apply task constraints and find such polytopes via vertex enumeration methods, see~\cite{valero-cuevas2015fundamentals}.
 
-For the index finger model used in this paper, the published maximal feasible force in the distal direction is 28.81 Newtons. We defined the normalized desired distal task intensity as a value ranging between $0$ and $1$, i.e., each submaximal force can be produced by any of the points contained in its corresponding feasible activation space. For the production of a maximal force with $\alpha=1$ the feasible activation space shrinks to a single point~\cite{spoor1983balancing,Chao1978Graphical,chvatal1983linear,Valero-Cuevas2000Scaling}.
+For the index finger model used in this paper, the published maximal feasible force in the distal direction is 28.81 Newtons. We defined the normalized desired distal task intensity as a value ranging between $0$ and $1$, i.e., each submaximal force can be produced by any of the points contained in its corresponding feasible activation space. For the production of a maximal force, the feasible activation space shrinks to a single point~\cite{spoor1983balancing,Chao1978Graphical,chvatal1983linear,Valero-Cuevas2000Scaling}.
 
 \subsection*{Analysis of feasible activation spaces}
 \paragraph*{Parallel coordinates visualization shows the location of all points across all dimensions}
 
-Parallel coordinates are a common graphical approach to visualize interactions among high-dimensional data, which has been used in biomechanical studies~\cite{bachynskyi2013biomechanical, krekel2010visual}.
-To demonstrate this visualization method, consider the results of the simple 3-dimensional example shown in Fig.~\ref{fig:figure_2_hit_and_run_steps}e. We begin by drawing $n$ parallel vertical lines for each of the dimensions $n$ (i.e., 3 muscles).
+Parallel coordinates are a common graphical approach to visualize interactions among high-dimensional data ~\cite{bachynskyi2013biomechanical, krekel2010visual}.
+To demonstrate this visualization method, consider the results of the simple 3-dimensional example shown in Fig.~\ref{fig:points_to_parcoords_mapping}. We begin by drawing $n$ parallel vertical lines for each of the dimensions $n$ (i.e., 3 muscles).
 With the axis limits of each line set between 0 and 1, each point (Fig.~\ref{fig:points_to_parcoords_mapping}a) is then represented by connecting their coordinates by $n-1$ lines as shown in Fig.~\ref{fig:points_to_parcoords_mapping}b.
 
 \paragraph*{Neural and metabolic cost functions}
@@ -416,7 +415,7 @@ This provides the PCs that describe the correlations among valid muscle activati
 For example, the feasible activation space $P$ in Fig.~\ref{fig:figure_2_hit_and_run_steps}e is a 2-dimensional polygon embedded in 3-dimensional activation space. Thus, applying PCA to points sampled from the polygon will extract 2 synergies (i.e., 3-dimensional correlation vectors PC1 and PC2) that wholly explain the feasible activation space. By extension, in the case of fingertip force production in Fig.~\ref{fig:overview}, the feasible activation space is a 3-dimensional polytope embedded of the 7-dimensional activation space. And PCA should extract, by construction, as many synergies as there are dimensions in the feasible activation space. For static force production with the index fingertip (i.e., 7 muscles and 4 constraints), we know that 3 principal components should describe 100\% of the variance in points sampled from the feasible activation space (i.e., 7-dimensional correlation vectors PC1, PC2, and PC3).
 
 Applying PCA to our data allows us to test whether and how its results change when applied to feasible activation spaces for different magnitudes of fingertip force. We applied PCA to feasible activation spaces for fingertip task intensities ranging from 0 to 90\% of maximal.
-We compare both the variance explained by each PC and their vector direction (i..e, the `loadings' or correlations among muscle~\cite{valero2016robot}) as the force level increases.
+We compare both the variance explained by each PC and their vector direction (i.e., the `loadings' or correlations among muscle~\cite{valero2016robot}) as the force level increases.
 Lastly, we tested whether our PCA results are sensitive to the number of points sampled from each feasible activation space. This is important because experimental studies test 10 or so subjects in practice, which may be too few when sampling from high-dimensional spaces.
 
 

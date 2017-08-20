@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 AUG 2017 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 AUG 2017 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2005,7 +2005,7 @@ pe png)
  <use numbered_figures/figure_4_parcoord_saturation_edited.png>
 Package pdftex.def Info: numbered_figures/figure_4_parcoord_saturation_edited.p
 ng used on input line 122.
-(pdftex.def)             Requested size: 202.2744pt x 276.06963pt.
+(pdftex.def)             Requested size: 244.69386pt x 334.1333pt.
 
 
 Package natbib Warning: Citation `Valero-Cuevas1998Large ' on page 2 undefined 
@@ -2058,7 +2058,7 @@ df)
  <use numbered_figures/figure_7_pca_variance_explained.pdf>
 Package pdftex.def Info: numbered_figures/figure_7_pca_variance_explained.pdf u
 sed on input line 169.
-(pdftex.def)             Requested size: 202.2744pt x 150.07222pt.
+(pdftex.def)             Requested size: 244.69386pt x 181.53555pt.
  [4 <./supplemental_figures/parcoord_supplemental.pdf> <./numbered_figures/figu
 re_7_pca_variance_explained.pdf
 
@@ -2073,7 +2073,11 @@ File: supplemental_figures/pc_loadings_FDP_made_positive.pdf Graphic file (type
  <use supplemental_figures/pc_loadings_FDP_made_positive.pdf>
 Package pdftex.def Info: supplemental_figures/pc_loadings_FDP_made_positive.pdf
  used on input line 190.
-(pdftex.def)             Requested size: 87.6975pt x 318.67078pt.
+(pdftex.def)             Requested size: 164.43593pt x 597.50787pt.
+
+
+LaTeX Warning: Float too large for page by 3.57162pt on input line 195.
+
 
 <numbered_figures/figure_6_histogram_surfaces_v2.pdf, id=1421, 610.64336pt x 38
 3.7788pt>
@@ -2088,10 +2092,11 @@ Overfull \hbox (0.7654pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
-[5 <./supplemental_figures/pc_loadings_FDP_made_positive.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[5 <./supplemental_figures/pc_loadings_FDP_made_positive.pdf>] [6 <./numbered_f
+igures/figure_6_histogram_surfaces_v2.pdf>]
+Underfull \vbox (badness 3623) has occurred while \output is active []
 
- [6 <./numbered_figures/figure_6_histogram_surfaces_v2.pdf>]
+
 
 Package natbib Warning: Citation `sanger2011distributed ' on page 7 undefined o
 n input line 255.
@@ -2100,54 +2105,60 @@ n input line 255.
 LaTeX Warning: Reference `fig:figure_2_hit_and_run_steps' on page 7 undefined o
 n input line 259.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 428.
- [7]
+[7]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 428.
+(Font)              scaled to size 7.59998pt on input line 427.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 427.
 
 
 LaTeX Warning: Reference `fig:figure_2_hit_and_run_steps' on page 8 undefined o
-n input line 428.
+n input line 427.
 
 
 Package natbib Warning: Citation `YYY_IEEE_STR' on page 8 undefined on input li
-ne 428.
-
-
-Package natbib Warning: Citation `YYY_FUNDAMENTALS_BOOK' on page 8 undefined on
- input line 428.
+ne 427.
 
 
 Package natbib Warning: Citation `YYY_IEEE_STR' on page 8 undefined on input li
-ne 428.
+ne 427.
 
 [8]
-
-LaTeX Warning: Reference `fig:figure_2_hit_and_run_steps' on page 9 undefined o
-n input line 428.
-
-
-Overfull \hbox (0.82129pt too wide) in paragraph at lines 428--428
+Overfull \hbox (0.82129pt too wide) in paragraph at lines 427--427
 \T1/lmr/m/n/8 (-20) reduction of neuromuscular control, only few independent fu
 nctions---
  []
 
 
 LaTeX Warning: Reference `fig:figure_2_hit_and_run_steps' on page 9 undefined o
-n input line 428.
+n input line 427.
 
-Extra height:10.0pt when 610.93596pt
-Extra height:0.0pt when 611.93596pt
-(2)Left:611.93596pt Right:612.76044pt Output:611.93596pt
-(2)Left:612.76044pt Right:612.76044pt Output:612.76044pt
+[9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 45.77774pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 46.77774pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:46.77774pt Right:46.0pt Output:46.77774pt
 - LAST -
-Left:612.76044pt
-Right:612.76044pt
-Output:612.76044pt
+Left:46.77774pt
+Right:46.0pt
+Output:46.77774pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 (./pnas-template-main.bbl
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 6.
@@ -2174,7 +2185,7 @@ Package natbib Warning: There were undefined citations.
 
 AED: lastpage setting LastPage
 
-Overfull \vbox (1067.99971pt too high) has occurred while \output is active []
+Overfull \vbox (502.84149pt too high) has occurred while \output is active []
 
 - LAST -
 Extra skip:0.0pt
@@ -2182,71 +2193,61 @@ Left:553.0pt/1.26822pt
 Right:553.0pt/1.26822pt
 Output:553.5pt
 
-[9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 442.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 442.
- (./pnas-template-main.xwm)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-(./pnas-template-main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 442.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 442.
+[10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 441.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 441.
+ (./pnas-template-main.xwm) (./pnas-template-main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 441.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 441.
 Package rerunfilecheck Info: File `pnas-template-main.out' has not changed.
 (rerunfilecheck)             Checksum: E2E616883C6C841678D5073D21283D3D;67.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 442.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 441.
  ) 
 Here is how much of TeX's memory you used:
- 36660 strings out of 492995
- 686472 string characters out of 6132704
- 929547 words of memory out of 5000000
+ 36662 strings out of 492995
+ 686488 string characters out of 6132704
+ 907113 words of memory out of 5000000
  39170 multiletter control sequences out of 15000+600000
- 149455 words of font info for 266 fonts, out of 8000000 for 9000
+ 149539 words of font info for 267 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 148i,15n,141p,10408b,1036s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{page.10} has been referenced but does not exist, 
-replaced by a fixed one
-
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/loca
-l/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017
-/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dis
-t/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8
-r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx7.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/font
-s/type1/public/lm/lmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
-lic/lm/lmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi
-8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
-c/lm/lmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri8.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2017/texmf-dist/fo
-nts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
-ublic/lm/lmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lm
-tt9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on pnas-template-main.pdf (9 pages, 42685579 bytes).
+ 148i,16n,141p,10408b,1036s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
+cal/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
+17/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-d
+ist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/
+dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base
+/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchb8a
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx7.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
+ublic/lm/lmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lm
+mi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/lm/lmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri8
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
+/public/lm/lmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/
+lmtt9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb
+8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on pnas-template-main.pdf (10 pages, 42686574 bytes).
 PDF statistics:
- 2474 PDF objects out of 2487 (max. 8388607)
- 547 compressed objects within 6 object streams
+ 2480 PDF objects out of 2487 (max. 8388607)
+ 552 compressed objects within 6 object streams
  88 named destinations out of 1000 (max. 500000)
  51768 words of extra memory for PDF output out of 61914 (max. 10000000)
 
